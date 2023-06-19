@@ -1,4 +1,4 @@
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 import * as cdk from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';

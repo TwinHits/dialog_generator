@@ -1,4 +1,4 @@
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 describe('dialogue generator', () => {
 	test('tests run successfully', () => {
