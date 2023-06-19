@@ -4,7 +4,5 @@ import { Construct } from 'constructs';
 export class DialogueGeneratorStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-
-        });
   }
 }
