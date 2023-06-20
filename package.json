@@ -1,8 +1,8 @@
 {
-  "name": "dialogue_generator",
+  "name": "dialog_generator",
   "version": "1.0.0",
   "bin": {
-    "dialogue_generator": "bin/dialogue_generator.js"
+    "dialog_generator": "bin/dialog_generator.js"
   },
   "scripts": {
     "build": "tsc",
