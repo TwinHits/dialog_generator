@@ -1,7 +1,7 @@
 import { describe, expect, test } from "@jest/globals";
 import { handler } from "../src/handler";
 
-import test_request from "./data/request";
+import api_gateway_proxy_event from "./data/api_gateway_proxy_event";
 
 describe("handler", () => {
 
@@ -9,10 +9,11 @@ describe("handler", () => {
         expect(true).toBeTruthy();
     });
 
-    test("returns successfully", () => {
-        const actual = handler(test_request);
+    test("returns successfully", async () => {
+        const actual = await handler(api_gateway_proxy_event);
 
         expect(actual).toBeDefined();
-        expect(actual).toBeTruthy();
+        expect(actual.statusCode).toEqual(200);
+        expect(actual.body).toEqual("Hello world!");
     });
 });
