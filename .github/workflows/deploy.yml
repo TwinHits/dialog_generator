@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - run: echo "$(ls)"
+      - run: ls
         shell: bash
 
       - name: cdk diff
