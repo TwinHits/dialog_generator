@@ -8,7 +8,6 @@ jobs:
     steps:
 
       - run: ls
-        shell: bash
 
       - name: cdk diff
         uses: youyo/aws-cdk-github-actions@v2
