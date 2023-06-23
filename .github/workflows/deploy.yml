@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - run: echo "$(ls)"
+        shell: bash
+
       - name: cdk diff
         uses: youyo/aws-cdk-github-actions@v2
         with:
