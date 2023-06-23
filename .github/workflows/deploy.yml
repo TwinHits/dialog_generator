@@ -7,10 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: ls
-      - run: pwd
-      - run: cat cdk.json
-      - run: ls . 
 
       - name: cdk diff
         uses: youyo/aws-cdk-github-actions@v2
@@ -26,7 +22,7 @@ jobs:
         uses: youyo/aws-cdk-github-actions@v2
         with:
           cdk_subcommand: 'deploy'
-          cdk_stack: 'stack1'
+          cdk_stack: 'DialogGeneratorStack'
           cdk_args: '--require-approval never'
           actions_comment: false
         env:
