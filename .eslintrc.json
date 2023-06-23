@@ -31,6 +31,14 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "@typescript-eslint/no-explicit-any": "warn",
+        "comma-dangle": ["error", {
+            "arrays": "always",
+            "objects": "always",
+            "imports": "never",
+            "exports": "never",
+            "functions": "never"
+        }]
     }
 }

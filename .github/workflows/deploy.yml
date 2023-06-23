@@ -1,6 +1,9 @@
-name: Lint
+name: Deploy
 
-on: [push]
+on:
+  push:
+    branches:    
+      - production
 
 jobs:
   build:
@@ -19,4 +22,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install 
-    - run: npm run lint
+    - run: npm deploy
