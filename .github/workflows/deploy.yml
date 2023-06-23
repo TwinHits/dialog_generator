@@ -8,6 +8,9 @@ jobs:
     steps:
 
       - run: ls
+      - run: pwd
+      - run: cat cdk.json
+      - run: ls . 
 
       - name: cdk diff
         uses: youyo/aws-cdk-github-actions@v2
