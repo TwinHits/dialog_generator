@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 import * as cdk from "aws-cdk-lib";
 import * as apigateway from "aws-cdk-lib/aws-apigateway";
 import * as lambda from "aws-cdk-lib/aws-lambda";
@@ -15,7 +17,7 @@ export class DialogGeneratorStack extends cdk.Stack {
             code: lambda.Code.fromAsset("src"),
             handler: "handler",
             environment: {
-                API_KEY: "KEY",
+                "CHATGPT_API_KEY": process.env.CHATGPT_API_KEY as string,
             },
         });
         cdk.Tags.of(dialog_generator_lambda).add("project", TAG_VALUE);

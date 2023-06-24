@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 import { describe, expect, test } from "@jest/globals";
 import { handler } from "../src/handler";
 
@@ -15,5 +17,10 @@ describe("handler", () => {
         expect(actual).toBeDefined();
         expect(actual.statusCode).toEqual(200);
         expect(actual.body).toEqual("Hello world!");
+    });
+
+    test("can access environment variables", () => {
+        expect(process.env.BASE_URL).toBeDefined();
+        expect(process.env.CHATGPT_API_KEY).toBeDefined();
     });
 });

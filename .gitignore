@@ -9,3 +9,6 @@ cdk.out
 
 # VIM temp files
 *~
+
+# secrets
+.env
