@@ -6,3 +6,6 @@ Javascript
 Typescript
 CDK
 ChatGPT
+
+Environment Variables:
+Requires CHATGPT_API_KEY and BASE_URL in .env file locally and GitHub repo secrets 
