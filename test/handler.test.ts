@@ -1,7 +1,7 @@
 import "dotenv/config";
 
 import { describe, expect, test } from "@jest/globals";
-import { handler } from "../src/handler";
+import { handler } from "../src/index";
 
 import api_gateway_proxy_event from "./data/api_gateway_proxy_event";
 
