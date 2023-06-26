@@ -8,6 +8,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm install 
+      - run: npm run build
+        env:
+          CHATGPT_API_KEY: ${{ secrets.CHATGPT_API_KEY }}
+          BASE_URL: ${{ secrets.BASE_URL }}
+
       - name: cdk diff
         uses: youyo/aws-cdk-github-actions@v2
         with:
