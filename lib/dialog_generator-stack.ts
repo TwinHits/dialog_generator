@@ -15,7 +15,7 @@ export class DialogGeneratorStack extends cdk.Stack {
         const dialog_generator_lambda = new lambda.Function(this, "dialog_generator_lambda", {
             runtime: lambda.Runtime.NODEJS_18_X,
             code: lambda.Code.fromAsset("src"),
-            handler: "handler",
+            handler: "index.handler",
             environment: {
                 "CHATGPT_API_KEY": process.env.CHATGPT_API_KEY as string,
             },
