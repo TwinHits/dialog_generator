@@ -100,6 +100,6 @@ export default {
         "apiId": "70ixmpl4fl",
         "authorizer": {},
     },
-    "body": null,
+    "body": "",
     "isBase64Encoded": false,
 };
