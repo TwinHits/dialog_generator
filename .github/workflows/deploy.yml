@@ -5,6 +5,11 @@ on: [workflow_dispatch]
 jobs:
   aws_cdk:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
     steps:
       - uses: actions/checkout@v3
 
