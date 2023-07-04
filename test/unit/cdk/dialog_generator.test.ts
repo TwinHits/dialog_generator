@@ -3,7 +3,7 @@ import { describe, expect, test } from "@jest/globals";
 import * as cdk from "aws-cdk-lib";
 import { Template } from "aws-cdk-lib/assertions";
 
-import * as DialogGenerator from "../../lib/dialog_generator-stack";
+import * as DialogGenerator from "../../../lib/dialog_generator-stack";
 
 describe("CDK Dialog Generator", () => {
     test("stack created", () => {

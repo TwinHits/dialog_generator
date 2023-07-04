@@ -7,7 +7,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
+    "test": "jest test/unit",
+    "integration_tests": "jest test/integration",
     "deploy": "cdk deploy",
     "lint": "eslint . --ext .ts",
     "fix": "eslint . --ext .ts --fix",
