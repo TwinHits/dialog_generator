@@ -3,3 +3,4 @@
 
 npm run fix
 npm test
+npm test -- --coverage

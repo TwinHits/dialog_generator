@@ -1,4 +1,4 @@
 export const generate_dialog = (personality: string, facts: string[], length: number): string  => {
-    const dialog = "This is dialog";
-    return dialog;
+    const use_variables = `${personality} ${facts} ${length}`;
+    return use_variables;
 };
