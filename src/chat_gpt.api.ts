@@ -19,8 +19,8 @@ export const post = async (body: unknown): Promise<ChatCompletionResponseMessage
     } catch (error: any) {
         if (error.response) {
             throw Error(`${error.response.status}: ${error.response.data}`);
-          } else {
+        } else {
             throw Error(error.message);
-          }
+        }
     }
 };

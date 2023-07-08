@@ -10,8 +10,8 @@ describe("generate_dialog", () => {
         response: {
             status: 400,
             message: "This is the error message.",
-        }
-    }
+        },
+    };
     const mock_openai_api = jest.spyOn(openai_api, "");
 
     beforeEach(() => {
